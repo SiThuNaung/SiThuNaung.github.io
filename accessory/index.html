@@ -12,10 +12,10 @@
     <form id="accessoryForm">
         <label for="accessory">Select an accessory:</label>
         <select id="accessory" name="accessory">
-            <option value="p123">Car Cover</option>
-            <option value="p234">Seat Covers</option>
-            <option value="p456">Floor Mats</option>
-            <option value="p996">Door Visors</option>
+            <option value="carCover">Car Cover</option>
+            <option value="seatCover">Seat Covers</option>
+            <option value="floorMat">Floor Mats</option>
+            <option value="doorVisors">Door Visors</option>
         </select>
         <br>
         <label for="amount">Amount:</label>
@@ -70,13 +70,13 @@
         function calculatePrice(accessory,amount) {
             // Add your own logic to calculate the price based on the selected accessory
             switch (accessory) {
-                case "p123":
+                case "carCover":
                     return 50*amount;
-                case "p234":
+                case "seatCover":
                     return 30*amount;
-                case "p456":
+                case "floorMat":
                     return 20*amount;
-                case "p996":
+                case "doorVisors":
                     return 40*amount;
                 default:
                     return 0;
